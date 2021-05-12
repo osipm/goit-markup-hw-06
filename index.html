@@ -55,44 +55,40 @@
           <form class="form-modal" action="#" method="POST" autocomplete="off">
             <label class="modal-label" for="name">Имя</label>
             <div class="modal-input-div">
-              <input class="modal-input" type="text" patern="[A-Za-zА-Яа-яЁё]" name="name">
+              <input class="modal-input" type="text" pattern="[A-Za-zА-Яа-яЁё]" name="name" id="name">
               <svg class="modai-icon" width="12" height="12">
                 <use href="./imeges/icons.svg#icon-name"></use>
               </svg>
             </div>
-            <label class="modal-label" for="tel" >Телефон</label>
+            <label class="modal-label" for="tel">Телефон</label>
             <div class="modal-input-div">
-              <input class="modal-input" type="tel" patern="[0-9]{5,10}" name="tel">
+              <input class="modal-input" type="tel" pattern="[0-9]{5,10}" name="tel" id="tel">
               <svg class="modai-icon" width="13" height="13">
                 <use href="./imeges/icons.svg#icon-tel"></use>
               </svg>
             </div>
             <label class="modal-label" for="email">Почта</label>
             <div class="modal-input-div">
-              <input class="modal-input" type="email" name="email">
+              <input class="modal-input" type="email" name="email" id="email">
               <svg class="modai-icon" width="15" height="12">
                 <use href="./imeges/icons.svg#icon-mail"></use>
               </svg>
             </div>
             <label class="modal-label" for="comment">Комментарий</label>
-            <textarea class="modal-input modal-textarea" patern="^[А-Яа-яЁё\s]+$" name="comment" id="comment"
+            <textarea class="modal-input modal-textarea" name="comment" id="comment"
               placeholder="Введите текст"></textarea>
 
             <label class="label-check">
-              <input class="input-check" type="checkbox">
+              <input class="input-check" type="checkbox" name="checkbox-value" />
               <span class="check-box">
-                <svg class="icon-check" width="16" height="15">
+                <svg class="icon-check" width="11" height="8">
                   <use href="./imeges/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              <span>Соглашаюсь с рассылкой и принимаю</span><a class="checkbox-link" href="#">Условия договора</a>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="checkbox-link" href="#">Условия договора</a>
             </label>
-
-
             <button class="btn modal-btn" type="submit">Отправить</button>
-
-
-
           </form>
         </div>
       </div>
@@ -393,6 +389,7 @@
       </div>
     </section>
   </main>
+
   <!--футер-->
 
   <footer class="footer-bg">
@@ -445,22 +442,16 @@
       </div>
 
       <form class="form-footer">
-        <label class="title-section title-footer label-footer" for="E-mail">Подпишитесь на рассылку</label>
+        <label class="title-section title-footer label-footer" for="mail">Подпишитесь на рассылку</label>
         <div class="mail-form">
-          <input type="text" name="E-mail" class="input-mail mg-form" placeholder="E-mail">
+          <input class="input-mail mg-form" type="text" name="mail" placeholder="E-mail" id="mail">
           <button class="btn mg-form">Подписаться<svg class="mail-svg">
               <use href="./imeges/icons.svg#icon-iconbutton"></use>
             </svg></button>
+        </div>
       </form>
-
-
-
-
-
     </div>
   </footer>
   <script src="./js/modal.js"></script>
 </body>
-
-
 </html>
